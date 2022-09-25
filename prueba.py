@@ -1,16 +1,17 @@
 import pandas as pd
+import random as n 
 
-# La clave es el titulo de la columna y el contenido son listas con los items de cada columna
 data = {
-    "Personas" : ["Analía Ferreyra" , "Martin Hugo", "Fernando Lorenzo"],
-    "Edad" : [25, 35, 87] 
+    'Usuario': ['Lucas', 'Ezequiel', 'Giordano'],
+    'Password': ['abc123', 'contrasegura', '123cba'],
+    'Random': []
 }
-# Con pd.DataFrame podemos generar una variable tipo DataFrame
-# Recordemos que DataFrame es el tipo de dato que usa pandas
-dataFrame = pd.DataFrame(data) 
 
-print(dataFrame)
+for i in range(3):
+    data['Random'].append( n.randint(1,30) )
 
-# Exportamos la información a un archivo llamado "personas.xlsx"
-df = dataFrame.to_excel("personas.xlsx") 
-# print(df)
+print(data)
+
+df = pd.DataFrame(data)
+
+print(df)
