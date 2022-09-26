@@ -4,4 +4,4 @@ df = pd.read_excel("https://raw.githubusercontent.com/IEEESBITBA/Curso-Python/ma
 
 notas = df['Quimica']
 promedio = sum(notas)
-print(promedio)
+print(promedio / 6)
