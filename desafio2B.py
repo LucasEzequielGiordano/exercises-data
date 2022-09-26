@@ -1,8 +1,8 @@
 import pandas as pd
 
-df = pd.read_excel("https://raw.githubusercontent.com/IEEESBITBA/Curso-Python/master/Curso_Analisis_de_Datos_Datos/Datos.xlsx")
+df = pd.read_excel("Datos.xlsx")
 records = df.to_dict('records')
-
+print(df)
 alumno = input('Ingrese un alumno: ')
 for i in records:
     if i['Nombre'] == alumno:

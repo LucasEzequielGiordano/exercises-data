@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv('https://covid.ourworldindata.org/data/archived/ecdc/full_data.csv')
+df = pd.read_csv('full_data.csv')
 pd.set_option('display.max_columns', 10)
 
 # print(df)
