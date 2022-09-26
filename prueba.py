@@ -14,4 +14,5 @@ print(data)
 
 df = pd.DataFrame(data)
 
-print(df)
+print(df['new_cases'].sum())
+print(df['total_cases'].max())
